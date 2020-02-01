@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OAK-HTML theme</title>
+	<link rel="stylesheet" type="text/css" href="Style.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<div id="container" 
+		
+		<div id="header" align="right" onclick="myFunction(this)">
+	   <div class="image" align="left"> <img src="logo.png"></div>
+	    <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+		</div>
+		<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+
+		<div id="content">
+			<div id="nav">
+				<div class="slideshow-container">
+					<div class="centered"><h1>pure<span>Elegance</span></h1></div>
+					
+
+<div class="mySlides fade">
+    <img src="image_3.jpg" style="width:100%">
+    					<h1 class="ml11">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters">AWESOME THEME</span>
+  </span>
+</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+ 
+</div>
+
+<div class="mySlides fade">
+    <img src="image_2.jpg" style="width:100%">
+    <h1 class="ml11">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters">MODERN COMBINATION</span>
+  </span>
+</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="image_1.jpg" style="width:100%">
+  <h1 class="ml11">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters">CREATIVE SOLUTIONS</span>
+  </span>
+</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+ 
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+			</div>
+			<div id="history">
+				<h3>HISTORY OF AGENCY</h3>
+				 WHO LOVES OR PURSUES OR DESIRES TO OBTAIN PAIN OF ITSELF, BUT BECAUSE OCCASIONALLY CIRCUMSTANCES OCCUR AND PAIN CAN PROCURE HIM SOME GREAT PLEASURE
+                     <br>
+                     Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.
+                     <br>
+                     <br>
+                     <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+   
+    <img src="about_img.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="about_img2.jpg" style="width:100%">
+   
+  </div>
+
+  <div class="mySlides fade">
+   
+    <img src="about_img3.jpg" style="width:100%">
+    <script type="text/javascript">
+    	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    </script>>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+			</div>
+			<div id="choice">
+				<h3><span style="text-decoration: underline;">WHY</span> CHOOSE US?</h3>
+       <p>Expect to Obtain some advantage from it</p>
+    </div>
+
+    <div class="subcontainer">
+    <div class="row">
+      <div class="col-lg-4">
+        <i class="fas fa-pencil-ruler icons2"></i>
+        <h4>BRANDING</h4>
+                Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.
+      </div>
+      <div class="col-lg-4">
+        
+        <i class="fas fa-globe icons2"></i>
+        <h4>PLAN OF WORK</h4>
+                Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.
+      </div>
+      <div class="col-lg-4">
+        
+        <i class="fas fa-brush icons2"></i>
+        <h4>ILLUSTRATION</h4>
+        Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.
+      </div>
+    </div>
+    </div>
+
+    <div class="subcontainer">
+    <div>
+      <h3><span style="text-decoration: underline">OUR </span> WORK</h3>
+      <p>Laborious to obtain some advantage from it</p>
+      <br>
+    </div>
+    </div>
+
+    <div>
+			</div>
+			<div id="work">
+				<div class="row">
+  <div class="column">
+    <img src="img_1.jpg">
+    <img src="img_2.jpg">
+    <img src="img_3.jpg">
+   
+    
+  </div>
+  <div class="column">
+    <img src="img_4.jpg">
+    <img src="img_5.jpg">
+    <img src="img_6.jpg">
+    
+  </div>
+  <div class="column">
+    
+    <img src="img_7.jpg">
+    <img src="img_8.jpg">
+    <img src="img_9.jpg">
+      </div>
+
+  
+</div>
+			</div>
+		</div>
+		<div id="footer">
+			<footer>
+   <div class="jumbotron">
+    <div class="container">
+       <div class="row">
+           <div class="col-md-3">
+              <h4>O.A.K THEME</h4>
+                <ul class="list-unstyled">
+                  <li>City 35 AM</li>
+                  <li>Street 1395 p.n</li>
+                  <li>your Country</li>
+                </ul>
+           </div>
+           <div class="col-md-1"></div>
+           <div class="col-md-4">
+                <div class="row ">
+                  <div class="iconlist">
+                <center><i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-flickr"></i>
+                <i class="fab fa-dribbble-square"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-linkedin-in"></i></center>
+                </div></div>
+                <br>
+                <div class="row">
+                  &copy 2015 OAK,ALL RIGHTS RESERVED
+                </div>
+           </div>
+           <div class="col-md-1"></div>
+           <div class="col-md-3">
+                <ul class="list-unstyled">
+                  <li><h4>CONTACT INFO</h4></li>
+                    <li>T:003 124 115</li>
+                    <li>E:info@mail.com</li>
+                    <li>W:www.website.com</li>
+           </div>
+
+          </div>
+    </div> 
+   </div>
+  </footer>
+
+
+		</div>
+	</div>
+
+</body>
+</html>
